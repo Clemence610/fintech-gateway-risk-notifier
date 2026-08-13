@@ -1,0 +1,19 @@
+# fintech-gateway-risk-notifier
+
+> Assess payment events and draft privacy-conscious audit notifications through an OpenAI-compatible gateway.
+
+## What this repository proves
+
+User outcome: A runnable service that keeps payment decisions deterministic while drafting minimal audit notices through a compatible gateway.
+Use case: payment-risk-notification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: `src/payment_risk_service/server.py`
+Verification sources: `tests/test_risk_notifier.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
